@@ -7,17 +7,17 @@
   <meta name="description" content="User Experience Design case studies including high-fidelity protoypes, usability testing, user journeys, and user research.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Roman Yanish UX designer, Photographer, Bad Surfer</title>
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
   <header>
-    <div>
-      <img src="https://via.placeholder.com/150x50?text=my-cool-logo" alt="Your Name">
+    <div id="header" class="container">
+      <img src="https://via.placeholder.com/150x50?text=my-cool-logo" alt="Roman Yanish" class="logo">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -30,86 +30,86 @@
 
   <main>
     <div id="hero">
-      <div>
+      <div class="container">
         <h1>Hi, I'm Roman Yanish</h1>
-        <span>I'm a UX designer and Photographer</span>
+        <h3>UX designer and Photographer</h3>
         <p>I’m a user experience designer and photographer with specializations
           in user interface design and front end web development. I design for humans, with a
           user-centered approach informed by research, empathetic user journeys, and testing.</p>
       </div>
     </div>
 
-    <div id="my work">
-      <div>
+    <div id="my-work">
+      <div class="container">
         <h2>My Work</h2>
-        <p>Find case studies for user experience design, user interface design, research, and branding projects.</p>
-        <div>
-
+        <div class="row">
+          <p>Find case studies for user experience design, user interface design, research, and branding projects.</p>
           <div>
 
-            <picture>
-              <source srcset="img/fitted/fitted-cover-1x.jpeg" media="(max-width:767px)">
-              <img src="img/fitted/fitted-cover-2x.jpeg" alt="My Image">
-            </picture>
-          </div>
-          <div>
+            <div>
 
-            <h3>Fitted</h3>
-            <p>
+              <picture>
+                <source srcset="img/fitted/fitted-cover-1x.jpg" media="(max-width:767px)">
+                <img src="img/fitted/fitted-cover-2x.jpg" alt="My Image">
+              </picture>
+            </div>
+            <div>
 
-              UI case study for Fitted - a responsive web app that empowers everyday people reach their fitness goals.
-            </p>
-            <p>
+              <h3>Fitted</h3>
 
-              I created a cohesive visual design system to form brand identity while establishing clean and clear information architecture.
-            </p>
-            <a href="fitted.html" class="button">Read more</a>
+              <p>
+
+                UI case study for Fitted - a responsive web app that empowers everyday people reach their fitness goals.
+              </p>
+              <p>
+
+                I created a cohesive visual design system to form brand identity while establishing clean and clear information architecture.
+              </p>
+              <a href="fitted.html" class="button">Read more</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div>
       <div>
-        <picture>
-          <source srcset="img/hidden-gems/hidden-gems-cover-1x.jpeg" media="(max-width:767px)">
-          <img src="img/hidden-gems/hidden-gems-cover-2x.jpeg" alt="My Image">
-        </picture>
-      </div>
-      <div>
-        <h3>Hidden Gems</h3>
-        <p>UX Case study for a native web app that sends you on one-of-a-kind social scavenger hunts- around town or around the world!</p>
-        <p>This end-to-end design project included user reserach, usability testing, and a style guide. Try it yourself with a high-fidelity prototype.</p>
-        <a href="#" class="button">Read More</a>
-      </div>
-    </div>
+        <div class="container">
+          <picture>
+            <source srcset="img/hidden-gems/hidden-gems-cover-1x.jpeg" media="(max-width:767px)">
+            <img src="img/hidden-gems/hidden-gems-cover-2x.jpeg" alt="My Image">
+          </picture>
+        </div>
+        <div class="container">
+          <h3>Hidden Gems</h3>
+          <div class="row">
+            <p>UX Case study for a native web app that sends you on one-of-a-kind social scavenger hunts- around town or around the world!</p>
+            <p>This end-to-end design project included user reserach, usability testing, and a style guide. Try it yourself with a high-fidelity prototype.</p>
+            <a href="#" class="button">Read More</a>
+          </div>
+        </div>
   </main>
 
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2>Get in Touch</h2>
-      <p>Want to have coffee and talk about a project? Drop me a note. Call: <a href="tel:+16513283171">+1 651.328.3171</a> or Skype me at <a href="skype:roman.yanish">roman.yanish</a>. You can also email me.
+      <p>Want to have coffee and talk about a project? <br> Drop me a note. Call: <a href="tel:+16513283171">+1 651.328.3171</a> or Skype me at <a href="skype:roman.yanish">roman.yanish</a>. You can also email me.
       </p>
     </div>
-    <div>
-      <a href="mailto:romanyanishdesign@gmail.com" class="button contact">Send Email</a>
+    <div class="footer-cta">
+      <a href="mailto:romanyanishdesign@gmail.com" class="button-contact">Email Roman</a>
     </div>
     <div>
-      <ul>
+      <ul id="social-icons">
         <li><a href="LINKEDIN-URL" target="_blank">
-            <svg height="500" id="svg2" version="1.1" width="500" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg">
-              <defs id="defs4" />
-              <g id="layer1" transform="translate(0,-552.36218)">
-                <rect height="500" id="rect2990-1" rx="250" ry="250" style="fill:#0077b5;fill-opacity:1;stroke:none" width="500" x="0" y="552.36218" />
-                <g id="layer1-9" transform="translate(-549.00515,80.294372)" />
-                <g id="layer1-6" transform="translate(-575.71429,39.999999)" />
-                <g id="layer1-92" transform="matrix(0.99533037,0,0,0.99716768,619.96997,-73.128637)">
-                  <g id="layer1-9-7" transform="translate(-1068,-236)" />
+            <svg enable-background="new 0 0 100 100" height="100px" id="Layer_1" version="1.1" viewBox="0 0 100 100" width="100px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g>
+                <circle cx="50" cy="50" fill="#197FB7" r="45" />
+                <g id="LinkedIn_1_">
+                  <rect fill="#FFFFFF" height="24.361" width="7.69" x="31.271" y="43.569" />
+                  <path
+                    d="M59.968,43.334c-4.406,0-7.165,2.387-7.677,4.058v-3.823h-8.636c0.109,2.03,0,24.361,0,24.361h8.636    V54.748c0-0.733-0.034-1.465,0.19-1.991c0.594-1.464,1.869-2.985,4.162-2.985c2.998,0,4.361,2.253,4.361,5.552V67.93h8.721V54.384    C69.726,46.839,65.432,43.334,59.968,43.334z"
+                    fill="#FFFFFF" />
+                  <path d="M34.973,32.069c-2.839,0-4.696,1.823-4.696,4.229c0,2.361,1.804,4.224,4.589,4.224h0.054    c2.891,0,4.69-1.869,4.69-4.229C39.555,33.888,37.81,32.069,34.973,32.069z" fill="#FFFFFF" />
                 </g>
-                <path
-                  d="M 128.76316,642.36224 C 107.34952,642.36224 90,659.75123 90,681.20435 c 0,21.45322 17.34952,38.8421 38.76316,38.8421 21.41364,0 38.76316,-17.38888 38.76316,-38.8421 0,-21.45312 -17.34952,-38.84211 -38.76316,-38.84211 z m 203.02631,101.13158 0,0.0263 c -4.37833,-0.0156 -8.62646,0.15968 -14.18421,0.44737 -12.18891,0.63097 -40.6558,13.83786 -51.07894,34.92106 0,-9.15329 0.10526,-17.55993 0.10526,-30.10527 -12.4852,0 -28.82418,0.0789 -62.94737,0.0789 0,38.30812 -0.42105,173.97085 -0.42105,213.5 l 66.07895,0 c 0,-23.44978 0.31578,-82.35285 0.31578,-119.34211 0,-12.42047 7.50808,-41.10526 38.31579,-41.10526 27.97383,0 35.81579,23.57737 35.81579,41.10526 0,38.52259 -0.28947,92.97632 -0.28947,119.34211 l 66.47368,0 c 0,-25.77235 0.23633,-95.77893 -0.55263,-139.94737 -0.95794,-53.62831 -33.53337,-76.50988 -62.76316,-78.31579 -6.01505,-0.37149 -10.49009,-0.5893 -14.86842,-0.60526 z m -236.210523,6.21053 0,212.55263 66.263163,0 0,-212.55263 -66.263163,0 z"
-                  id="rect2989-1-7" style="fill:#ffffff;fill-opacity:1;stroke:none" />
               </g>
             </svg>
           </a></li>
