@@ -3,15 +3,25 @@ Colors used:
 Primary Color (Blue): #05676e;
 Secondary Color (Green): #489c79;
 */
-body{
-font-family: 'Ubuntu', sans-serif;
-font-size: 16px;
-/* Sets the font size to 16px */
-font-weight: 300;
-/* Sets the font weight to 300 */
-line-height: 1.6;
-/* Sets the line-height to 1.6 * the font-size */
-color: #4a4a4a;
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ffe4c4;
+  text-align: center;
+  padding: 10px 0;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
 }
 
 a {
@@ -74,6 +84,21 @@ img {
   transition: 0.2s opacity;
 }
 
+.button-contact {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ff7f50;
+  color: #ffffff;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+  margin-left: 15px;
+}
+
 .button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
@@ -91,3 +116,137 @@ img {
   background-color: #ff7f50;
   color: #ffffff;
 }
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#my-work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#about-roman .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#about-roman {
+  
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#about-roman h1{
+  text-align: center;
+  background-color: #ffe4c4;
+}
+
+#about-roman h2 {
+  text-align: center;
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+#hero h3 {
+  text-align: center;
+}
+
+#my-work h2 {
+  text-align: center;
+  /* Centers text */
+}
+
+#hero span {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav>ul>li>a:visited {
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+nav {
+  display: inline-block width: 100%
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#header {
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.55);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.55);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.55);
+}
+
+#header {
+  position: relative;
+}
+
+#social-icons svg {
+  height: 200px;
+  width: 200px;
+}
+
+#social-icons li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  margin-left: 0px;
+}
+
+#social-icons {
+  margin-left: 0px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+#button-contact {
+  text-align: center;
+}
+
+#contact .container {
+  text-align: center;
+}
+
+.footer-cta {
+  margin: 0 auto;
+  text-align: center;
+}
+
+padding-bottom: 25px;
+border-bottom: 1px solid #4a4a4a;
