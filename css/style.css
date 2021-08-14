@@ -9,8 +9,7 @@ Secondary Color (Green): #489c79;
 
 header {
   background-color: #ffe4c4;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
 }
 
 body {
@@ -81,7 +80,7 @@ img {
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
-    transition: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 
 .button-contact {
@@ -97,7 +96,7 @@ img {
   /* width of the border, type, color */
   transition: 0.2s opacity;
   margin-left: 15px;
-    transition: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 
 .button:hover {
@@ -111,7 +110,7 @@ img {
   color: #ff7f50;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
-    transition: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 
 .button.contact:hover {
@@ -179,10 +178,7 @@ img {
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -197,13 +193,10 @@ nav>ul>li>a:visited {
   text-decoration: none;
 }
 
-nav {
-  display: inline-block width: 100%;
-}
 
 #hero {
   background-color: #ffe4c4;
-  padding: 20px 0;
+
   display: inline-block;
   width: 100%;
 }
@@ -256,13 +249,18 @@ nav {
 
 .row svg {
   width: 100%;
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -270,8 +268,13 @@ height: auto;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -279,13 +282,56 @@ height: auto;
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+.logo {
+  max-width: 150px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -339,6 +385,22 @@ Medium devices (640px and larger)
   #about-page h3 {
     margin-top: 0;
   }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
 }
 
 /* ==============================
@@ -357,37 +419,35 @@ Large devices (1024px or larger)
     padding-right: 10px;
   }
 
+  body {
+    font-size: 18px;
+  }
 
-body {
-  font-size: 18px;
+  #hero {
+    text-align: center;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  #my-work h3 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+  #about-roman h1 {
+    text-align: center;
+  }
+
+  #about-roman .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-#hero {
-  text-align: center;
-}
-
-#hero span {
-  display: block;
-}
-
-#my-work h3 {
-  margin-top: 0px;
-  margin-bottom: 15px;
-}
-
-#about-roman h1{
-  text-align: center;
-}
-
-#about-roman .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
-
-
-    /* ==============================
+/* ==============================
 X-large devices (1440px or larger)
 ================================= */
-    @media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {}
